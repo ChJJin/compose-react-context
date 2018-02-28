@@ -7,7 +7,7 @@ export default function createContext(obj) {
     if (isContext(obj)) return obj;
     if (Array.isArray(obj)) return arrayToContext(obj);
     if (isObject(obj)) return objectToContext(obj);
-    return obj;
+    return React.createContext(obj);
   }
 
   function isContext(value) {
