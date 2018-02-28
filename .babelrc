@@ -6,6 +6,6 @@
     "react"
   ],
   "plugins": [
-    "transform-runtime"
+    "external-helpers"
   ]
 }

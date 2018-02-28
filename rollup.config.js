@@ -11,6 +11,9 @@ export default {
     file: pkg.module
   }],
   plugins: [
-    babel(),
+    babel({ runtimeHelpers: true }),
+  ],
+  external: [
+    'react'
   ]
 };
